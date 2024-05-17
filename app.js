@@ -18,14 +18,14 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.use(express.static('public'));
 
 app.get('/elements', (req, res) => {
-    res.render('home', {
+    res.render('elements', {
         nombre: 'GRUPO NODE',
         titulo: 'Curso de Node'
     });
 })
 
 app.get('/generic', (req, res) => {
-    res.render('home', {
+    res.render('generic', {
         nombre: 'GRUPO NODE',
         titulo: 'Curso de Node'
     });
